@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Employee
+from .models import Accident
 
-class EmployeeSerializer(serializers.ModelSerializer):
+class AccidentSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Employee
-        fields = ('id','curp','rfc','fecha_nacimiento','fecha_accidente')
+        model = Accident
+        fields = ('id','curp','fecha_accidente','residuo_fisico','residuo_emocional','residuo_intelectual','residuo_intuicional') 
