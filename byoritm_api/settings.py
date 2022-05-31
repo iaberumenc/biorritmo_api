@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5-3c8&-o9@n0d!wmc*c!=pjigyh5u(!*3nz4!33c6wqlw^xr(*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bioritmoapi.herokuapp.com','127.0.0.1']
 
 
 # Application definition
