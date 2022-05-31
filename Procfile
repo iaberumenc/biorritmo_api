@@ -1,1 +1,1 @@
-web: gunicorn byoritm.wsgi --log-file -
+web: gunicorn byoritm_api.wsgi --log-file -
