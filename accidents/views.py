@@ -8,7 +8,7 @@ from .serializers import AccidentSerializer
 class AccidentViewSet(ModelViewSet):
     filter_backends = [DjangoFilterBackend, OrderingFilter, SearchFilter]
     filterset_fields = []
-    http_method_names = ['get','post','put']
+    http_method_names = ['get','post','put','delete']
     ordering_fields = ['id','fecha_nacimiento']
     search_fields = []
     serializer_class = AccidentSerializer
