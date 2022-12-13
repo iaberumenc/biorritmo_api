@@ -78,10 +78,21 @@ WSGI_APPLICATION = 'byoritm_api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'degm5pe4iars1s',
+        'HOST': 'ec2-52-44-13-158.compute-1.amazonaws.com',
+        'USER': 'wxldpopygagrqm',
+        'PASSWORD': 'fc9c952ffafb5fd5d8a1045574843dceb24e9d32265a564494bd71c4b11e642f',
+        'PORT': '5432'
     }
 }
 
