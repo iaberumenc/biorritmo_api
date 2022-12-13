@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -88,10 +89,10 @@ WSGI_APPLICATION = 'byoritm_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'degm5pe4iars1s',
-        'HOST': 'ec2-52-44-13-158.compute-1.amazonaws.com',
-        'USER': 'wxldpopygagrqm',
-        'PASSWORD': 'fc9c952ffafb5fd5d8a1045574843dceb24e9d32265a564494bd71c4b11e642f',
+        'NAME': 'd66mjc6cfh0b29',
+        'HOST': 'ec2-3-225-213-67.compute-1.amazonaws.com',
+        'USER': 'raqibspltpkkxj',
+        'PASSWORD': 'c9d60d0a7ea81c0f1d5d44523645e32f7207a0571be2750641bbbf8895f99d09',
         'PORT': '5432'
     }
 }
@@ -135,3 +136,4 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
+django_heroku.settings(locals())

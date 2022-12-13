@@ -25,6 +25,6 @@ class Migration(migrations.Migration):
         ),
         migrations.AddConstraint(
             model_name='employee',
-            constraint=models.UniqueConstraint(fields=('curp',), name=''),
+            constraint=models.UniqueConstraint(fields=('curp',), name='curp_contraint'),
         ),
     ]

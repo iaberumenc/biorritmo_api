@@ -10,7 +10,7 @@ class Employee(models.Model):
         verbose_name_plural = 'Empleados'
     
         constraints = [
-                models.UniqueConstraint(fields=['curp'], name='')
+                models.UniqueConstraint(fields=['curp'], name='curp_contraint')
             ]
     
     def __str__(self):
